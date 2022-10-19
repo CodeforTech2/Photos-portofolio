@@ -26,11 +26,23 @@ li {
 /* =========================== Navbar and welcome page ====================== */
 header {
     height: 100vh;
-    background-image: url(/Pictures/Landing.jpg);
+    background-image: url(/Pictures/Landing.jpg), linear-gradient(#0d0d0d, #d13531);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+
+/* header::after {
+    opacity: 0.5;
+    background: url(/Pictures/Landing.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+} */
 
 nav {
     /* background-color: gray; */
