@@ -115,7 +115,6 @@ nav {
     font-family: monospace;
     color: #f8f3ed;
     font-size: 1.5rem;
-    /* padding-bottom: 150px; */
 }
 
 .film-section {
@@ -130,8 +129,7 @@ nav {
 }
 
 .film-img {
-    /* max-width: 25vw; */
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     object-fit: cover;
 }
