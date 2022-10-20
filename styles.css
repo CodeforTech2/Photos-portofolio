@@ -112,15 +112,16 @@ nav {
 }
 
 .film-portofolio h1 {
-    width: 500px;
-    top: -50px;
+    width: 800px;
+    top: -80px;
     position: relative;
     font-family: monospace;
     text-align: center;
     /* color: #f8f3ed; */
-    font-size: 3rem;
+    font-size: 4rem;
     letter-spacing: 5px;
 }
+
 
 .film-section {
     display: flex;
@@ -131,14 +132,20 @@ nav {
 }
 
 .film-container {
+    overflow: hidden;
+    border: 5px solid rgb(126, 103, 91);
+    border-radius: 2px;
 }
 
 .film-img {
     max-width: 100%;
     height: 100%;
     object-fit: cover;
-    border: 5px solid rgb(126, 103, 91);
-    border-radius: 2px;
+    transition: all 0.7s;
+}
+
+.film-img:hover {
+    transform: scale(1.05);
 }
 
 /* =========================== Black and White section ====================== */
@@ -151,6 +158,7 @@ nav {
     display: flex;
     justify-content: center;
     position: relative;
+    overflow: hidden;
 }
 
 
@@ -162,9 +170,11 @@ nav {
     left: 2%;
     transform: rotate3d(-1, -1, -0.1, 25deg);
     transition: 0.7s;
+    z-index: 10;
 }
 .black-white-left:hover {
-    transform: rotate3d(1, -1, -0.1, 25deg);;
+    transform: rotate3d(1, -1, -0.1, 25deg);
+    transform: scale(1.03);
 }
 
 .black-white-main {
@@ -172,9 +182,8 @@ nav {
     height: auto;
     object-fit: cover;
     transition: 0.7s;
-}
-.black-white-main:hover {
-    transform:scaleX(1.1);
+    overflow: hidden;
+    z-index: 3;
 }
 
 .black-white-right {
@@ -183,7 +192,29 @@ nav {
     position: absolute;
     bottom: 5%;
     right: 1%;
-    transform: rotate3d(1, -1, 0.2, 10deg);
+    transform: rotate3d(1, -1, -1, 10deg);
+    transition: 0.7s;
+    z-index: 10;
+}
+.black-white-right:hover {
+    transform: rotate3d(1, -1, 0.2, 30deg);
+    transform: scale(1.03);
+}
+
+.black-white-stars {
+    position: absolute;
+    right: 10.5%;
+    z-index: 2;
+    /* transform: rotate(30deg); */
+    transform: scale(1.5) rotate(30deg);
+}
+.black-white-stars1 {
+    position: absolute;
+    left: 15%;
+    bottom: 0;
+    z-index: 2;
+    /* transform: rotate(30deg); */
+    transform: scale(1.5) rotate(30deg);
 }
 
 /* ===========================  ====================== */
