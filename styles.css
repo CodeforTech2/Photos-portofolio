@@ -145,20 +145,45 @@ nav {
 
 .black-white-container {
     height: 100vh;
-    background-color:rgb(253, 248, 240);
+    width: 100%;
+    /* background-color:rgb(253, 248, 240); */
+    background: linear-gradient(to right, rgb(238, 238, 238), rgb(0, 0, 0), rgb(253, 236, 219));
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
-.black-white-container {
-    
+
+.black-white-left {
+    max-width: 27vw;
+    height: auto;
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    transform: rotate3d(-1, -1, -0.1, 25deg);
+    transition: 0.7s;
+}
+.black-white-left:hover {
+    transform: rotate3d(1, -1, -0.1, 25deg);;
 }
 
 .black-white-main {
     width: 50vw;
     height: auto;
     object-fit: cover;
+    transition: 0.7s;
+}
+.black-white-main:hover {
+    transform:scaleX(1.1);
+}
 
+.black-white-right {
+    max-width: 35vw;
+    height: auto;
+    position: absolute;
+    bottom: 5%;
+    right: 1%;
+    transform: rotate3d(1, -1, 0.2, 10deg);
 }
 
 /* ===========================  ====================== */
