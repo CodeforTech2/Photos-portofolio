@@ -112,13 +112,13 @@ nav {
 }
 
 .film-portofolio h1 {
-    width: 800px;
+    width: 500px;
     top: -80px;
     position: relative;
     font-family: monospace;
     text-align: center;
     /* color: #f8f3ed; */
-    font-size: 4rem;
+    font-size: 2vw;
     letter-spacing: 5px;
 }
 
@@ -128,7 +128,7 @@ nav {
     gap: 5px;
     height: 60vh;
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .film-container {
@@ -147,6 +147,10 @@ nav {
 .film-img:hover {
     transform: scale(1.05);
 }
+
+/* .navigation {
+    padding-top: 50px;
+} */
 
 /* =========================== Black and White section ====================== */
 
@@ -187,10 +191,10 @@ nav {
 }
 
 .black-white-right {
-    max-width: 35vw;
+    max-width: 30vw;
     height: auto;
     position: absolute;
-    bottom: 5%;
+    bottom: 10%;
     right: 1%;
     transform: rotate3d(1, -1, -1, 10deg);
     transition: 0.7s;
@@ -264,7 +268,7 @@ nav {
   }
 
   .anothertest {
-    height: 100vh;
+    height: 200vh;
     /* background-color: rgb(134, 112, 85); */
     background-image: url(/Pictures/20200724_165341.jpg);
     background-size: cover;
