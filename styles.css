@@ -108,7 +108,7 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    color: rgb(171, 147, 133);
+    color: rgb(250, 228, 215);
 }
 
 .film-portofolio h1 {
@@ -125,14 +125,14 @@ nav {
 .film-section {
     display: flex;
     flex-direction: row;
-    gap: 5px;
-    height: 60vh;
+    gap: 20px;
+    height: 55vh;
     width: 100%;
 }
 
 .film-container {
     overflow: hidden;
-    border: 5px solid rgb(83, 68, 60);
+    border: 5px solid rgb(68, 57, 52);
     border-radius: 2px;
     flex: 1;
 }
@@ -142,7 +142,7 @@ nav {
     height: 100%;
     object-fit: cover;
     transition: all 0.7s;
-    transform: rotate3d(1, 1, 1, 10deg);
+    /* transform: rotate3d(1, 1, 1, 10deg); */
 }
 
 .film-img:hover {
@@ -222,6 +222,19 @@ nav {
     transform: scale(1.5) rotate(30deg);
 }
 
+
+/* =========================== Random thrown section ====================== */
+
+.random-thrown-section {
+    background-color: bisque;
+    height: 200vh;
+}
+
+.random-thrown-section1 {
+    height: 100vh;
+    display: flex;
+}
+
 /* ===========================  ====================== */
 
 .gradient {
@@ -276,11 +289,15 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    transition: all 1s;
+    transition: all 3s; 
+}
+.anothertest-cont{
+      overflow: hidden; 
+
   }
 
-  .anothertest:focus {
-
+  .anothertest:hover {
+    transform: scale(1.2);
   }
 
 /* =========================== Keyframes====================== */
