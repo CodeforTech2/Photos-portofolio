@@ -245,14 +245,16 @@ nav {
 .img1 {
     width: 25vw;
     height: 36vh;
+    position: absolute;
+
 }
 .img2 {
-    width: 45vw;
+    width: 35vw;
     height: 56vh;
 }
 .img3 {
     width: 35vw;
-    height: 46vh;
+    height: 26vh;
 }
 .img4 {
     width: 20vw;
