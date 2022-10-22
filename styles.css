@@ -132,8 +132,8 @@ nav {
 
 .film-container {
     overflow: hidden;
-    border: 5px solid rgb(68, 57, 52);
-    border-radius: 2px;
+    /* border: 5px solid rgb(68, 57, 52); */
+    /* border-radius: 2px; */
     flex: 1;
 }
 
@@ -226,7 +226,7 @@ nav {
 /* =========================== Random thrown section ====================== */
 
 .random-thrown-section {
-    background-color: rgb(247, 233, 216);
+    background-color: rgb(255, 248, 239);
     height: 200vh;
 }
 
@@ -235,30 +235,124 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 3%;
+    position: relative;
 }
 
 .random-img {
-    padding: 3%;
     object-fit: cover;
 }
 
-.img1 {
-    width: 25vw;
-    height: 36vh;
+.wrapper1 {
+    position: relative;
+    top: 8%;
+}
+.wrapper2 {
+    position: relative;
+    /* left: 100px; */
+    top: 15%;
+    left: 5%;
+}
+.wrapper3 {
     position: absolute;
+    right: 0;
+    bottom: 0;
+}
 
+.wrapper4 {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+}
+.wrapper5 {
+    position: absolute;
+    bottom: 5%;
+    left: 15%;
+}
+
+.img1 {
+    width: 35vw;
+    height: 50vh;
 }
 .img2 {
-    width: 35vw;
-    height: 56vh;
+    width: 20vw;
+    height: 36vh;
 }
 .img3 {
-    width: 35vw;
-    height: 26vh;
+    width: 30vw;
+    height: 56vh;
 }
 .img4 {
     width: 20vw;
     height: 26vh;
+}
+.img5 {
+    width: 25vw;
+    height: 26vh;
+}
+
+.random-thrown-section2 {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3%;
+    position: relative;
+}
+.wrapper6 {
+    position: absolute;
+    right: 40%;
+    top: -6%;
+}
+.wrapper7 {
+    position: relative;
+    top: 10%;
+    left: 10%;
+}
+.wrapper8 {
+    position: absolute;
+    bottom: 5%;
+    right: 30%;
+}
+.wrapper9 {
+    position: absolute;
+    right: 15%;
+    top: 10%;
+}
+.wrapper10 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.wrapper11 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.img6 {
+    width: 15vw;
+    height: 26vh;
+}
+.img7 {
+    width: 30vw;
+    height: 58vh;
+}
+.img8 {
+    width: 20vw;
+    height: 46vh;
+}
+.img9 {
+    width: 20vw;
+    height: 26vh;
+}
+.img10 {
+    width: 22vw;
+    height: 16vh;
+}
+.img11{
+    width: 18vw;
+    height: 20vh;
 }
 
 /* ===========================  ====================== */
