@@ -237,6 +237,8 @@ nav {
     flex-wrap: wrap;
     gap: 3%;
     position: relative;
+    /* background-image: url(/Pictures/PNGs/lines1.png); */
+    /* background-position: center; */
 }
 
 .random-img {
@@ -298,6 +300,7 @@ nav {
     flex-wrap: wrap;
     gap: 3%;
     position: relative;
+    /* background-image: url(/Pictures/PNGs/lines1.png); */
 }
 .wrapper6 {
     position: absolute;
