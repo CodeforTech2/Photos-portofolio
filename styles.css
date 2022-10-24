@@ -365,15 +365,16 @@ nav {
     display: flex;
     position: relative;
     /* background-color: rgb(255, 242, 233); */
-    background: linear-gradient(65deg, rgb(97, 68, 35), rgb(224, 224, 224), rgb(209, 201, 191), rgb(114, 78, 37));
+    background: linear-gradient(65deg, rgb(77, 46, 11), rgb(224, 224, 224), rgb(209, 201, 191), rgb(73, 39, 0));
     justify-content: center;
     align-items: center;
 }
 
 .love {
-    width: 60vw;
-    height: 95vh;
+    width: 50vw;
+    height: 65vh;
     object-fit: cover;
+    z-index: 2;
 }
 .love-png {
     position: absolute;
@@ -381,6 +382,16 @@ nav {
     width: 70vw;
     height: 100vh;
     object-fit: contain;
+    z-index: 2;
+}
+.love-moon {
+    position: absolute;
+    width: 35vw;
+    height: auto;
+    object-fit: center;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
 }
 
 /* ===========================  ====================== */
