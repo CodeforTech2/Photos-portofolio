@@ -358,19 +358,33 @@ nav {
     height: 20vh;
 }
 
-/* =========================== Random thrown section ====================== */
+/* =========================== Love section ====================== */
 
 .love-section {
     height: 100vh;
-    background-color: gray;
     display: flex;
+    background-color: gray;
     position: relative;
+    justify-content: center;
+    align-items: center;
 }
 
 .love {
+    width: 60vw;
+    height: 75vh;
+    object-fit: cover;
+}
+.love-png {
     position: absolute;
-    bottom: 0;
-    /* height: 100vh; */
+    /* bottom: 0; */
+    width: 70vw;
+    height: 100vh;
+    object-fit: contain;
+    /* margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0; */
+    /* text-align: center; */
 }
 
 /* ===========================  ====================== */
