@@ -364,14 +364,15 @@ nav {
     height: 100vh;
     display: flex;
     position: relative;
-    background-color: rgb(255, 242, 233);
+    /* background-color: rgb(255, 242, 233); */
+    background: linear-gradient(65deg, rgb(97, 68, 35), rgb(224, 224, 224), rgb(209, 201, 191), rgb(114, 78, 37));
     justify-content: center;
     align-items: center;
 }
 
 .love {
     width: 60vw;
-    height: 75vh;
+    height: 95vh;
     object-fit: cover;
 }
 .love-png {
@@ -380,11 +381,6 @@ nav {
     width: 70vw;
     height: 100vh;
     object-fit: contain;
-    /* margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0; */
-    /* text-align: center; */
 }
 
 /* ===========================  ====================== */
