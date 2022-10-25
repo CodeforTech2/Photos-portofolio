@@ -515,6 +515,28 @@ button:hover {
     background-color: rgb(132, 82, 1);
 }
 
+/* =========================== Collage img Section ====================== */
+
+.collage-section {
+    border: 2px solid;
+}
+
+.collage-container {
+    display: flex;
+    /* flex-direction: row; */
+    height: 40vh;
+}
+
+.img-container {
+    flex: 1;
+}
+
+.collage-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid rgb(70, 47, 26);
+}
 
 /* ===========================  ====================== */
 
