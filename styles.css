@@ -197,7 +197,7 @@ nav {
     position: absolute;
     bottom: 10%;
     right: 1%;
-    transform: rotate3d(0.5, 1, 1, 30deg);
+    transform: rotate3d(0.5, 1, 1, 15deg);
     transition: 0.7s;
     z-index: 10;
 }
@@ -243,33 +243,60 @@ nav {
 
 .random-img {
     object-fit: cover;
+    transition: all 0.5s;
 }
+
+.random-img:hover {
+    /* transform: scale(1.1); */
+    cursor: pointer;
+
+}
+
+.wrapper {
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+/* .wrapper:hover {
+    transform: rotate(0);
+} */
 
 .wrapper1 {
     position: relative;
     top: 8%;
+    width: 35vw;
+    height: 50vh;
+    /* transform: rotate(-5deg); */
 }
 .wrapper2 {
     position: relative;
     /* left: 100px; */
     top: 15%;
     left: 5%;
+    width: 20vw;
+    height: 36vh;
 }
 .wrapper3 {
     position: absolute;
     right: 0;
     bottom: 0;
+    width: 30vw;
+    height: 56vh;
 }
 
 .wrapper4 {
     position: absolute;
     top: 3%;
     right: 3%;
+    width: 20vw;
+    height: 26vh;
 }
 .wrapper5 {
     position: absolute;
     bottom: 5%;
     left: 15%;
+    width: 25vw;
+    height: 26vh;
 }
 
 .img1 {
@@ -306,31 +333,43 @@ nav {
     position: absolute;
     right: 40%;
     top: -6%;
+    width: 15vw;
+    height: 26vh;
 }
 .wrapper7 {
     position: relative;
     top: 10%;
     left: 10%;
+    width: 30vw;
+    height: 58vh;
 }
 .wrapper8 {
     position: absolute;
     bottom: 5%;
     right: 30%;
+    width: 20vw;
+    height: 46vh;
 }
 .wrapper9 {
     position: absolute;
     right: 15%;
     top: 10%;
+    width: 20vw;
+    height: 26vh;
 }
 .wrapper10 {
     position: absolute;
     bottom: 0;
     right: 0;
+    width: 22vw;
+    height: 16vh;
 }
 .wrapper11 {
     position: absolute;
     bottom: 0;
     left: 0;
+    width: 18vw;
+    height: 20vh;
 }
 
 .img6 {
@@ -416,31 +455,68 @@ nav {
 }
 
 .pharagraph {
-    padding: 10%;
+    /* padding: 5%; */
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: var(--white);
 }
 
 .enter {
+    padding-bottom: 7%;
+    padding-top: 3%;
+    text-transform: uppercase;
+    color: rgb(239, 169, 31);
+    font-size: 2rem;
 }
 
 .email-address {
 }
 
 input {
-    /* background-color:rgb(3, 124, 124); */
-    background: linear-gradient(to right, rgb(0, 43, 40), rgb(3, 124, 124), rgb(0, 43, 40));
+    background-color:rgb(3, 89, 89);
+    /* background: linear-gradient(to right, rgb(0, 43, 40), rgb(3, 124, 124), rgb(0, 43, 40)); */
     border: none;
+    border-bottom: 2px solid black;
     padding: 2%;
+    text-align: center;
+    color: rgb(239, 169, 31);
+    font-family: var(--primary-font);
+    font-size: 2rem;
+}
+
+input:focus {
+    color: rgb(239, 169, 31);
+    font-family: var(--primary-font);
+    font-size: 2rem;
+    outline: none;
 }
 
 ::placeholder {
-    color: var(--white);
+    color: rgb(239, 169, 31);
     font-family: var(--primary-font);
+    font-size: 2rem;
 }
 
 .button {
-    padding: 5%;
+    padding: 2%;
     margin: 0 auto;
+    background-color: rgb(197, 134, 8);
+    color: var(--white);
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 2px;
+    margin-top: 2%;
+    transition: all 0.3s;
+    font-weight: bold;
 }
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: rgb(132, 82, 1);
+}
+
 
 /* ===========================  ====================== */
 
