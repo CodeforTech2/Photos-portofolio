@@ -113,6 +113,7 @@ nav {
     justify-content: space-evenly;
     color: rgb(255, 255, 255);
     position: relative;
+    overflow: hidden;
 }
 
 .film-portofolio h1 {
@@ -133,19 +134,18 @@ nav {
     flex-direction: row;
     gap: 10px;
     height: 55vh;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .film-container {
     overflow: hidden;
-    /* border: 5px solid rgb(68, 57, 52); */
-    /* border-radius: 2px; */
     flex: 1;
 }
 
 .film-img {
-    width: 100%;
-    height: 100%;
+    width: 25vw;
+    /* width: 100%; */
+    height: auto;
     object-fit: cover;
     transition: all 0.7s;
     /* transform: rotate3d(1, 1, 1, 10deg); */
@@ -155,9 +155,24 @@ nav {
     transform: scale(1.05);
 }
 
-/* .navigation {
-    padding-top: 50px;
-} */
+.navigation {
+    /* padding-top: 50px; */
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 50px;
+}
+
+.prev, .next {
+    /* color: rgb(181, 143, 115); */
+    color: #47392c;
+    font-size: 6vw;
+    margin: 30px;
+}
+
+.prev:hover, .next:hover {
+    cursor: pointer;
+    color: #766555;
+}
 
 /* =========================== Black and White section ====================== */
 
@@ -591,6 +606,7 @@ button:hover {
   }
 
   .anothertest {
+    
     height: 100vh;
     /* background-color: rgb(134, 112, 85); */
     background-image: url(/Pictures/20200724_165341.jpg);
@@ -598,15 +614,18 @@ button:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    transition: all 3s; 
+    /* transition: all 3s;  */
 }
 .anothertest-cont{
       overflow: hidden; 
-
   }
 
-  .anothertest:hover {
+  /* .anothertest:hover {
     transform: scale(1.2);
-  }
-
+  } */
+.poza img{
+    width: 50vw;
+    height: auto;
+    object-fit: cover;
+}
 /* =========================== Keyframes====================== */
