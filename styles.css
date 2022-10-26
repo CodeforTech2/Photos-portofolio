@@ -140,12 +140,13 @@ nav {
 .film-container {
     overflow: hidden;
     flex: 1;
+    width: 22vw;
 }
 
 .film-img {
-    width: 25vw;
-    /* width: 100%; */
-    height: auto;
+    /* width: 22vw; */
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     transition: all 0.7s;
     /* transform: rotate3d(1, 1, 1, 10deg); */
@@ -156,14 +157,12 @@ nav {
 }
 
 .navigation {
-    /* padding-top: 50px; */
     position: absolute;
     bottom: 0;
     margin-bottom: 50px;
 }
 
 .prev, .next {
-    /* color: rgb(181, 143, 115); */
     color: #47392c;
     font-size: 6vw;
     margin: 30px;
@@ -629,3 +628,5 @@ button:hover {
     object-fit: cover;
 }
 /* =========================== Keyframes====================== */
+
+

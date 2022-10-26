@@ -6,33 +6,58 @@ window.addEventListener('scroll', function() {
 })
 
 // Slide function for Film Portofolio - Automatic slideshow
-const prev = document.querySelector('.prev');
-const next = document.querySelector('.next');
+// let slideIndex = 1;
+// showSlides(slideIndex);
 
-prev.addEventListener('click', plusSlides(-1));
-next.addEventListener('click', plusSlides(1));
+// const prev = document.getElementsByClassName('prev');
+// const next = document.getElementsByClassName('next');
 
-let slideIndex = 1;
-showSlides(slideIndex);
+// prev.addEventListener('click', plusSlides(-1));
+// next.addEventListener('click', plusSlides(1));
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
-function showSlides(n) {
-    let slides = document.querySelectorAll('.film-container');
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = 'none';
-    }
-    // slideIndex++;
-    // if (slideIndex > slides.length) {slideIndex = 1};
-    slides[slideIndex - 1].style.display = 'block';
-    // setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-// Black and white section
-// reimagine pictures phone, nz012 in the middle and another 2 3 4 sideways, all from mountain
-//empty letters in photoshop, picture with us and a half moon
+
+// function plusSlides(n) {
+//     showSlides(slideIndex += n);
+// };
+
+// function showSlides(n) {
+//     let i;
+//     let slides = document.getElementsByClassName('film-container');
+//     if (n > slides.length) {slideIndex = 1}
+//     if (n < 1) {slideIndex = slides.length}
+//     for (i = 0; i < slides.length; i++) {
+//         slides[i].style.display = 'none';
+//     }
+//     // slideIndex++;
+//     // if (slideIndex > slides.length) {slideIndex = 1};
+//     slides[slideIndex-1].style.display = 'block';
+//     // setTimeout(showSlides, 2000); // Change image every 2 seconds
+// }
 
 //https://bradandjen.com/ - futured galleries ex, eu pot sa pun pe categorii si sa imi deschida in alte pagini
 // - cand dau click pe o imagine sa o vad full screen, cu sageti stanga/dreapta pentru navigare imagini, iar backgound sa fie pagina dinainte dar cu o transparenta mai mica
+// const arr = [1, 2, 3, 4, 5, 6, 7];
+// console.log(arr.push());
+// console.log(arr.push(arr.shift())); //move first el to the end
+// console.log(arr)
+
+// console.log(arr.unshift(arr.pop())) // move the last element at start
+// console.log(arr)
+
+const item = document.querySelectorAll('.film-container');
+const imgArr = Array.prototype.slice.call(item);
+// console.log(imgArr)
+function next() {
+    // item.push(item.shift());
+    const final = imgArr.shift()
+    // console.log(final)
+    imgArr.push(final);
+    console.log(imgArr)
+}
+next();
+
+function prev() {
+    // item.unshift(item.pop());
+    imgArr.unshift(imgArr.pop())
+    console.log(imgArr)
+}
