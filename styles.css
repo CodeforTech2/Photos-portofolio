@@ -108,24 +108,26 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    color: rgb(250, 228, 215);
+    color: rgb(255, 255, 255);
+    position: relative;
 }
 
 .film-portofolio h1 {
     width: 500px;
-    /* top: -80px; */
-    position: relative;
+    top: 100px;
+    position: absolute;
     font-family: monospace;
     text-align: center;
     font-size: 2vw;
     letter-spacing: 5px;
+    z-index: 1;
 }
 
 
 .film-section {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 10px;
     height: 55vh;
     width: 100%;
 }
@@ -168,7 +170,7 @@ nav {
 
 
 .black-white-left {
-    max-width: 27vw;
+    width: 25vw;
     height: auto;
     position: absolute;
     top: 5%;
@@ -362,7 +364,7 @@ nav {
     bottom: 0;
     right: 0;
     width: 22vw;
-    height: 16vh;
+    height: 21vh;
 }
 .wrapper11 {
     position: absolute;
@@ -390,7 +392,7 @@ nav {
 }
 .img10 {
     width: 22vw;
-    height: 16vh;
+    height: 21vh;
 }
 .img11{
     width: 18vw;

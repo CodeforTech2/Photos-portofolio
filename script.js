@@ -9,4 +9,5 @@ window.addEventListener('scroll', function() {
 // reimagine pictures phone, nz012 in the middle and another 2 3 4 sideways, all from mountain
 //empty letters in photoshop, picture with us and a half moon
 
-//--
+//https://bradandjen.com/ - futured galleries ex, eu pot sa pun pe categorii si sa imi deschida in alte pagini
+// - cand dau click pe o imagine sa o vad full screen, cu sageti stanga/dreapta pentru navigare imagini, iar backgound sa fie pagina dinainte dar cu o transparenta mai mica
