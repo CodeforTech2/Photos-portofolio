@@ -10,10 +10,10 @@ window.addEventListener('scroll', function() {
 const container = document.getElementById('film-wrapper');
 const item = document.getElementsByClassName('film-container');
 
-const prevv = document.getElementById('prev');
-const nextt = document.getElementById('next');
-prevv.addEventListener('click', prev);
-nextt.addEventListener('click', next);
+const prevImg = document.getElementById('prev');
+const nextImg = document.getElementById('next');
+prevImg.addEventListener('click', prev);
+nextImg.addEventListener('click', next);
 
 function matchKey(e) {
     if (e.keyCode === 37) {
@@ -27,10 +27,15 @@ function matchKey(e) {
 window.addEventListener('keydown', matchKey);
 function next() {
    container.append(item[0]);
+//    container.style.transition = "all 1s";
+   item.transition = "all 1s";
 };
 function prev() {
     container.prepend(item[item.length - 1]);
+    item.style.transition = 'all 2s';
 };
+
+
 
 // Slide function for Film Portofolio - Automatic slideshow
 // let slideIndex = 1;
