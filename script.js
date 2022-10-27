@@ -26,9 +26,9 @@ function matchKey(e) {
 
 window.addEventListener('keydown', matchKey);
 function next() {
-   container.append(item[0]);
-//    container.style.transition = "all 1s";
-   item.transition = "all 1s";
+    container.append(item[0]);
+    item.transition = "all 1s";
+    container.style.transition = "all 1s";
 };
 function prev() {
     container.prepend(item[item.length - 1]);
