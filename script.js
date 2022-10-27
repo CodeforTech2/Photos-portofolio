@@ -28,9 +28,12 @@ window.addEventListener('keydown', matchKey);
 
 function next() {
     container.append(item[0]);
+    container.style.transitionDuration = "2s";
+    // item.style.transitionDuration = "2s";
 };
 function prev() {
     container.prepend(item[item.length - 1]);
+    container.style.transition = "all 2s";
 };
 
 
@@ -69,3 +72,5 @@ function prev() {
 // - galleries to be presented on a bc fixed img, a little blurry
 // Row of imgs max 20vh above footer
 // Footer on a bc img fixed
+
+//make the collage section automate like film section but with setTimeOut
