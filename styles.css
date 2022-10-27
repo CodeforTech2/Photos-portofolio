@@ -162,15 +162,17 @@ nav {
     margin-bottom: 50px;
 }
 
-.prev, .next {
+#prev, #next {
     color: #47392c;
     font-size: 6vw;
     margin: 30px;
+    transition: 0.5s;
 }
 
-.prev:hover, .next:hover {
+#prev:hover, #next:hover {
     cursor: pointer;
     color: #766555;
+    transform: scale(1.1);
 }
 
 /* =========================== Black and White section ====================== */

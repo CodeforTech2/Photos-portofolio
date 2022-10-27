@@ -5,6 +5,33 @@ window.addEventListener('scroll', function() {
     // header.style.opacity = 1 - +window.scrollY/800+'';
 })
 
+//Slide Film Portofolio with arrows
+//implement right left keys
+const container = document.getElementById('film-wrapper');
+const item = document.getElementsByClassName('film-container');
+
+const prevv = document.getElementById('prev');
+const nextt = document.getElementById('next');
+prevv.addEventListener('click', prev);
+nextt.addEventListener('click', next);
+
+function matchKey(e) {
+    if (e.keyCode === 37) {
+        return prev();
+    }
+    if (e.keyCode === 39) {
+        return next();
+    }
+};
+
+window.addEventListener('keydown', matchKey);
+function next() {
+   container.append(item[0]);
+};
+function prev() {
+    container.prepend(item[item.length - 1]);
+};
+
 // Slide function for Film Portofolio - Automatic slideshow
 // let slideIndex = 1;
 // showSlides(slideIndex);
@@ -43,21 +70,3 @@ window.addEventListener('scroll', function() {
 
 // console.log(arr.unshift(arr.pop())) // move the last element at start
 // console.log(arr)
-
-const item = document.querySelectorAll('.film-container');
-const imgArr = Array.prototype.slice.call(item);
-// console.log(imgArr)
-function next() {
-    // item.push(item.shift());
-    const final = imgArr.shift()
-    // console.log(final)
-    imgArr.push(final);
-    console.log(imgArr)
-}
-next();
-
-function prev() {
-    // item.unshift(item.pop());
-    imgArr.unshift(imgArr.pop())
-    console.log(imgArr)
-}
