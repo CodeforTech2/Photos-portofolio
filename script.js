@@ -1,3 +1,4 @@
+//Fadeout landing page when scroll down
 const header = document.getElementById('header');
 
 window.addEventListener('scroll', function() {
@@ -23,16 +24,13 @@ function matchKey(e) {
         return next();
     }
 };
-
 window.addEventListener('keydown', matchKey);
+
 function next() {
     container.append(item[0]);
-    item.transition = "all 1s";
-    container.style.transition = "all 1s";
 };
 function prev() {
     container.prepend(item[item.length - 1]);
-    item.style.transition = 'all 2s';
 };
 
 
@@ -68,10 +66,6 @@ function prev() {
 
 //https://bradandjen.com/ - futured galleries ex, eu pot sa pun pe categorii si sa imi deschida in alte pagini
 // - cand dau click pe o imagine sa o vad full screen, cu sageti stanga/dreapta pentru navigare imagini, iar backgound sa fie pagina dinainte dar cu o transparenta mai mica
-// const arr = [1, 2, 3, 4, 5, 6, 7];
-// console.log(arr.push());
-// console.log(arr.push(arr.shift())); //move first el to the end
-// console.log(arr)
-
-// console.log(arr.unshift(arr.pop())) // move the last element at start
-// console.log(arr)
+// - galleries to be presented on a bc fixed img, a little blurry
+// Row of imgs max 20vh above footer
+// Footer on a bc img fixed
