@@ -67,7 +67,7 @@ function prev() {
 // }
 
 //https://bradandjen.com/ - futured galleries ex, eu pot sa pun pe categorii si sa imi deschida in alte pagini
-// - cand dau click pe o imagine sa o vad full screen, cu sageti stanga/dreapta pentru navigare imagini, iar backgound sa fie pagina dinainte dar cu o transparenta mai mica
+// - [modal image] cand dau click pe o imagine sa o vad full screen, cu sageti stanga/dreapta pentru navigare imagini, iar backgound sa fie pagina dinainte dar cu o transparenta mai mica
 // - galleries to be presented on a bc fixed img, a little blurry
 // Row of imgs max 20vh above footer
 // Footer on a bc img fixed

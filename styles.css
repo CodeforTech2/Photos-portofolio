@@ -162,16 +162,18 @@ nav {
 }
 
 #prev, #next {
-    color: #47392c;
-    font-size: 6vw;
+    color: #73573d;
+    font-size: 3vw;
     margin: 30px;
-    transition: 0.5s;
+    transition: 0.3s;
+    background-color: #1c1c1b;
+    border: none;
 }
 
 #prev:hover, #next:hover {
     cursor: pointer;
-    color: #766555;
-    transform: scale(1.1);
+    color: #b9936c;
+    transform: scale(1.2);
 }
 
 /* =========================== Black and White section ====================== */
@@ -454,6 +456,61 @@ nav {
     z-index: 1;
 }
 
+/* =========================== Galeries Section ====================== */
+
+.gallerie-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.gallerie-title {
+    font-size: 3rem;
+}
+
+.gallerie-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+.gallerie-wrapper {
+    width: 20vw;
+    height: 50vh;
+    position: relative;
+}
+
+.gallerie-img {
+    width: 100%;
+    height: auto;
+    transition: 0.3s ease;
+}
+
+.gallerie-img:hover {
+    opacity: 0.5;
+}
+
+.gallerie-wrapper:hover .click {
+    opacity: 1;
+}
+
+.click {
+    position:absolute; 
+    top:50%; 
+    left:50%; 
+    text-align: center;
+    transform:translate(-50%, -50%); 
+    opacity: 0;
+}
+
+.description {
+    text-align: center;
+    padding: 20px;
+}
+
 /* =========================== Newsletter Section ====================== */
 
 .newsletter-section {
@@ -631,7 +688,7 @@ button:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /* transition: all 3s;  */
+    opacity: 0.5;
 }
 .anothertest-cont{
       overflow: hidden; 
@@ -640,11 +697,7 @@ button:hover {
   /* .anothertest:hover {
     transform: scale(1.2);
   } */
-.poza img{
-    width: 50vw;
-    height: auto;
-    object-fit: cover;
-}
+
 /* =========================== Keyframes====================== */
 
 
