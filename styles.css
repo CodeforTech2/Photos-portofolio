@@ -1,5 +1,6 @@
 /*========================== General settings ===============================*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
 
 * {
     box-sizing: border-box;
@@ -60,7 +61,7 @@ nav {
 }
 
 #logo {
-    /* font-family: var(--primary-font); */
+    font-family: var(--primary-font);
 }
 .nav-list {
     display: flex;
@@ -120,7 +121,7 @@ nav {
     width: 500px;
     top: 100px;
     position: absolute;
-    font-family: monospace;
+    font-family: 'Old Standard TT', serif;
     text-align: center;
     font-size: 2vw;
     letter-spacing: 5px;
@@ -465,10 +466,13 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 50px;
+    background-color: #f7f5f5;
 }
 
 .gallerie-title {
-    font-size: 3rem;
+    font-size: 6vh;
+    color: #4b4b4b;
+    font-family: 'Old Standard TT', serif;
 }
 
 .gallerie-container {
@@ -490,24 +494,33 @@ nav {
 }
 
 .gallerie-img:hover {
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 .gallerie-wrapper:hover .click {
     opacity: 1;
+    color: rgb(226, 30, 151);
 }
 
 .click {
-    position:absolute; 
-    top:50%; 
-    left:50%; 
-    transform:translate(-50%, -50%); 
+    width: 200px;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center;
     opacity: 0;
+    font-size: 3vh;
+    /* font-family: 'Old Standard TT', serif; */
 }
 
 .description {
     text-align: center;
     padding: 20px;
+    font-size: 3vh;
+    font-family:Georgia, 'Times New Roman', Times, serif
+    /* font-family: 'Old Standard TT', serif; */
+    
 }
 
 /* =========================== Newsletter Section ====================== */
@@ -542,7 +555,8 @@ nav {
     padding-bottom: 7%;
     padding-top: 3%;
     text-transform: uppercase;
-    color: rgb(239, 169, 31);
+    color: var(--pink);
+    /* color: rgb(239, 169, 31); */
     font-size: 2rem;
 }
 
@@ -553,20 +567,23 @@ input {
     border-bottom: 2px solid black;
     padding: 2%;
     text-align: center;
-    color: rgb(239, 169, 31);
+    /* color: rgb(239, 169, 31); */
+    color: var(--pink);
     font-family: var(--primary-font);
     font-size: 2rem;
 }
 
 input:focus {
-    color: rgb(239, 169, 31);
+    /* color: rgb(239, 169, 31); */
+    color: var(--pink);
     font-family: var(--primary-font);
     font-size: 2rem;
     outline: none;
 }
 
 ::placeholder {
-    color: rgb(239, 169, 31);
+    /* color: rgb(239, 169, 31); */
+    color: var(--pink);
     font-family: var(--primary-font);
     font-size: 2rem;
 }
@@ -574,7 +591,7 @@ input:focus {
 .button {
     padding: 2%;
     margin: 0 auto;
-    background-color: rgb(197, 134, 8);
+    background-color: rgb(209, 79, 155);
     color: var(--white);
     border: none;
     text-transform: uppercase;
@@ -589,7 +606,7 @@ input:focus {
 button:hover {
     cursor: pointer;
     transform: scale(1.1);
-    background-color: rgb(132, 82, 1);
+    background-color: rgb(230, 61, 159);
 }
 
 /* =========================== Collage img Section ====================== */
@@ -606,7 +623,7 @@ button:hover {
     gap: 10px;
     width: 310%;
     position: relative;
-    animation: mymove 10s linear infinite;
+    /* animation: mymove 10s linear infinite; */
     pointer-events: none;
 }
 .collage-container:hover {
@@ -677,7 +694,7 @@ button:hover {
     background-attachment: fixed;
   }
 
-  .anothertest {
+  footer {
     
     height: 100vh;
     /* background-color: rgb(134, 112, 85); */

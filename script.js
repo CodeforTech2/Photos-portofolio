@@ -35,6 +35,7 @@ function prev() {
 
 
 //===============================  Draggable Slider on Collage Section ===============================
+
 const slider = document.querySelector('.collage-section');
 const innerSlider = document.querySelector('.collage-container');
 
