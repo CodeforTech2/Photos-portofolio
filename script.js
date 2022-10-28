@@ -1,4 +1,4 @@
-//Fadeout landing page when scroll down
+//=============================== Fadeout landing page when scroll down ===============================
 const header = document.getElementById('header');
 
 window.addEventListener('scroll', function() {
@@ -6,7 +6,7 @@ window.addEventListener('scroll', function() {
     // header.style.opacity = 1 - +window.scrollY/800+'';
 })
 
-//Slide Film Portofolio with arrows
+//===============================  Slide Film Portofolio with arrows ===============================
 //implement right left keys
 const container = document.getElementById('film-wrapper');
 const item = document.getElementsByClassName('film-container');
@@ -28,12 +28,60 @@ window.addEventListener('keydown', matchKey);
 
 function next() {
     container.append(item[0]);
-    container.style.transitionDuration = "2s";
 };
 function prev() {
     container.prepend(item[item.length - 1]);
-    container.style.transition = "all 2s";
 };
+
+
+//===============================  Draggable Slider on Collage Section ===============================
+const slider = document.querySelector('.collage-section');
+const innerSlider = document.querySelector('.collage-container');
+
+let pressed = false;
+let startx;
+let x;
+
+slider.addEventListener('mousedown', (e)=>{
+    pressed = true;
+    startx = e.offsetX - innerSlider.offsetLeft;
+    slider.style.cursor = 'grabbing';
+});
+
+slider.addEventListener('mouseenter', ()=>{
+    slider.style.cursor = 'grab';
+});
+
+slider.addEventListener('mouseup', ()=>{
+    slider.style.cursor = 'grab';
+});
+
+window.addEventListener('mouseup', ()=>{
+    pressed = false;
+});
+
+slider.addEventListener('mousemove', (e)=>{
+    if(!pressed) return; //if mouse is not pressed (clicked)
+    e.preventDefault();
+
+    x = e.offsetX;
+
+    innerSlider.style.left = `${x - startx}px`;
+
+    checkBoundary();
+});
+
+function checkBoundary() {
+    let outer = slider.getBoundingClientRect();
+    let inner = innerSlider.getBoundingClientRect();
+    
+    if(parseInt(innerSlider.style.left) > 0) {
+        innerSlider.style.left = '0px';
+    } else if(inner.right < outer.right) {
+        innerSlider.style.left = `-${inner.width - outer.width}px`;
+    }
+};
+
 
 
 
@@ -73,3 +121,4 @@ function prev() {
 // Footer on a bc img fixed
 
 //make the collage section automate like film section but with setTimeOut when is on screen
+
