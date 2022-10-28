@@ -606,7 +606,8 @@ button:hover {
     gap: 10px;
     width: 310%;
     position: relative;
-    /* animation: mymove 10s linear infinite; */
+    animation: mymove 10s linear infinite;
+    pointer-events: none;
 }
 .collage-container:hover {
     animation-play-state: paused;
