@@ -210,8 +210,6 @@ nav {
     width: 50vw;
     height: auto;
     object-fit: cover;
-    transition: 0.7s;
-    overflow: hidden;
     z-index: 3;
 }
 
@@ -694,24 +692,31 @@ button:hover {
     background-attachment: fixed;
   }
 
+
+   /* =========================== Footer ====================== */
+
   footer {
-    
     height: 100vh;
-    /* background-color: rgb(134, 112, 85); */
     background-image: url(/Pictures/20200724_165341.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    opacity: 0.5;
+    position: relative;
+    /* opacity: 0.5; */
+    /* filter: brightness(15%); */
 }
-.anothertest-cont{
-      overflow: hidden; 
-  }
 
-  /* .anothertest:hover {
-    transform: scale(1.2);
-  } */
+
+.copyright {
+    color: var(--pink);
+    letter-spacing: 3px;
+    font-family: var(--primary-font);
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%);
+}
 
 /* =========================== Keyframes====================== */
 
