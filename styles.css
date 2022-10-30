@@ -612,6 +612,18 @@ button:hover {
     border: 2px solid;
     width: 100%;
     overflow: hidden;
+    position: relative;
+}
+
+.collage-section h1 {
+    position: absolute;
+    font-size: 4vh;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    top: 40%;
+    text-shadow: 2px 2px 5px var(--pink);
 }
 
 .collage-container {
