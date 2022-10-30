@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --white: rgb(226, 226, 226);
+    --pink: #dd69b3;
+    /* --primary-font: 'Montserrat', sans-serif; */
+    --primary-font: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-family: var(--primary-font);
+}
+
+/* =========================== Navbar and welcome page ====================== */
+header {
+    height: 100vh;
+    background-image: url(/Pictures/footer\ bw\ darken.jpg);
+    background-size: cover;
+    /* background-size: 200%; */
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-attachment: fixed; */
+}
+
+nav {
+    /* background-color: gray; */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    /* max-width: 90%; */
+    margin: auto;
+    background-color: rgb(190, 188, 188);
+}
+
+#logo {
+    font-family: var(--primary-font);
+}
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.nav-list li {
+    list-style-type: none;
+}
+
+.nav-list li, #login, #signup  {
+    padding: 5px 15px;
+    letter-spacing: 4px;
+}
+
+.nav-list li:hover {
+    color: var(--pink)
+}
+
+#login, #signup {
+    cursor: pointer;
+    font-weight: 900;
+    border: none;
+    margin-right: 17px;
+}
+
+#login {
+    background-color: black;
+    color: rgb(226, 226, 226);
+}
+
+#login:hover {
+    background-color: rgb(43, 40, 40);
+}
+
+/* =========================== Pricing section ====================== */
+
+.pricing-section {
+    display: flex;
+    height: 70%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    max-width: 1300px;
+    /* background-color: #fff; */
+    margin: 0 auto
+}
+
+.wrapper {
+    width: 350px;
+    height: 500px;
+}
+
+.price-wrapper {
+    height: 100%;
+    width: 100%;
+}
+.title {
+    height: 20%;
+    background-color:rgb(20, 20, 20);
+    color: var(--white);
+    font-size: 20px;
+    font-family: "Roboto",sans-serif;
+    letter-spacing: 6px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.description {
+    height: 75%;
+    background-color: rgb(247, 247, 247);
+    letter-spacing: 2px;
+    font-size: 15px;
+    color: rgb(150, 150, 150);
+}
+
+.subtitle {
+    text-align: center;
+    padding: 25px;
+}
+.bold {
+    font-weight: bold;
+}
+
+.included {
+    padding: 0 25px;
+    font-style: oblique;
+    text-decoration: underline;
+}
+
+.full-access {
+    margin-top: 15px;
+    padding-left: 25px;
+}
+
+ .list-description {
+    list-style-position: inside;
+    padding: 15px 35px;
+}
+
+.limited {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.button {
+    width: 100%;
+    color: rgb(245, 245, 245);
+    background-color:#f38acd;
+    border: none;
+    height: 5%;
+    border-radius: 4px;
+    letter-spacing: 5px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.copyright {
+    letter-spacing: 3px;
+    font-family: var(--primary-font);
+    padding: 5px 10px;
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%);
+    color: var(--pink);
+}
