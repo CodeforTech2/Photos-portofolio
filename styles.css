@@ -7,6 +7,9 @@
     margin: 0;
     padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 :root {
     --white: rgb(226, 226, 226);
     --pink: #dd69b3;
@@ -525,12 +528,10 @@ nav {
 
 .newsletter-section {
     height: 50vh;
-    /* width: 100%; */
     background: linear-gradient(to right, rgb(0, 43, 40), rgb(3, 124, 124), rgb(0, 43, 40));
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
-    /* align-items: center; */
+letter-spacing: 5px;
 }
 
 .newsletter-container {
@@ -559,7 +560,7 @@ nav {
 }
 
 input {
-    background-color:rgb(3, 89, 89);
+    background-color:rgb(16, 112, 112);
     /* background: linear-gradient(to right, rgb(0, 43, 40), rgb(3, 124, 124), rgb(0, 43, 40)); */
     border: none;
     border-bottom: 2px solid black;
@@ -572,7 +573,6 @@ input {
 }
 
 input:focus {
-    /* color: rgb(239, 169, 31); */
     color: var(--pink);
     font-family: var(--primary-font);
     font-size: 2rem;
@@ -580,10 +580,10 @@ input:focus {
 }
 
 ::placeholder {
-    /* color: rgb(239, 169, 31); */
     color: var(--pink);
     font-family: var(--primary-font);
     font-size: 2rem;
+    letter-spacing: 4px;
 }
 
 .button {
@@ -599,6 +599,7 @@ input:focus {
     transition: all 0.3s;
     font-weight: bold;
     font-size: 1rem;
+    letter-spacing: 4px;
 }
 
 button:hover {
@@ -624,6 +625,7 @@ button:hover {
     text-align: center;
     top: 40%;
     text-shadow: 2px 2px 5px var(--pink);
+    letter-spacing: 3px;
 }
 
 .collage-container {
@@ -707,32 +709,23 @@ button:hover {
 
    /* =========================== Footer ====================== */
 
-  footer {
-      height: 100vh;
-      background-image: url(/Pictures/footer\ bw\ darken.jpg);
-      background-color: black;
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      position: relative;
-      /* opacity: 0.5; */
-      /* filter: brightness(30%); */
-      color: var(--pink);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 5%;
-    }
-    
-/* .overlay {
-    position: absolute;
+footer {
+    height: 100vh;
+    background-image: url(/Pictures/footer\ bw\ darken.jpg);
     background-color: black;
-    width: 100%;
-    height: 100%;
-    opacity: 0.8;
-} */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    color: var(--pink);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    letter-spacing: 4px;
+}
 
 .social {
     display: flex;
@@ -777,6 +770,17 @@ button:hover {
 
 .footer-list li:hover {
     transform: scale(1.1);
+}
+
+.back-top {
+    position: absolute;
+    right: 10%;
+    font-size: 3vh;
+    cursor: pointer;
+}
+
+.back-top a {
+    color: var(--pink);
 }
 
 .copyright {
