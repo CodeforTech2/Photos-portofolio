@@ -709,14 +709,15 @@ button:hover {
 
   footer {
       height: 100vh;
-      background-image: url(/Pictures/20200724_165341.jpg);
-      background-size: cover;
+      background-image: url(/Pictures/footer\ bw\ darken.jpg);
+      background-color: black;
+      background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
       background-attachment: fixed;
       position: relative;
       /* opacity: 0.5; */
-      /* filter: brightness(15%); */
+      /* filter: brightness(30%); */
       color: var(--pink);
       display: flex;
       flex-direction: column;
