@@ -710,6 +710,7 @@ button:hover {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      gap: 5%;
     }
     
 /* .overlay {
@@ -728,8 +729,8 @@ button:hover {
 }
 
 .social-wrapper {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     margin: 20px;
     background-color: #fff;
     border-radius: 50%;
@@ -753,6 +754,16 @@ button:hover {
 .footer-list {
     display: flex;
     gap: 50px;
+}
+
+.footer-list li {
+    font-size: 3vh;
+    color: var(--pink);
+    transition: all 0.2s;
+}
+
+.footer-list li:hover {
+    transform: scale(1.2);
 }
 
 .copyright {
