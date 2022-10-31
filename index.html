@@ -9,6 +9,7 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+
     <!-- Header Section -->
    <header id="header">
     <nav>
@@ -176,7 +177,7 @@
         <!-- <h4 class="email-address">email address</h4>
         <div class="break"></div> -->
         <input type="text" placeholder="email address" class="email-address">
-        <button class="button">Sign me up</button>
+        <button class="news-button">Sign me up</button>
     </div>
    </section>
 
@@ -234,9 +235,6 @@
     </div>
    </section>
 
-   
-   
-    
     <!-- Footer Section -->
 
     <footer>
@@ -264,6 +262,37 @@
         <span class="back-top"><a href="#header">Top &uarr;</a></span>
         <h3 class="copyright">Photos Portofolio COPYRIGHTS &copy 2022 | Code4Tech</h3>   
     </footer>
+
+    <!-- Login Modal Section -->
+    <div id="form" class="modal">
+
+        <form class="modal-content animate" action="" method="post">
+            <h1>Login to your account!</h1>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" placeholder="Enter Email"><br>
+            <label for="psw">Password</label><br>
+            <input type="password" id="psw" placeholder="Enter Password"><br>
+            <div class="remember">
+                <span class="forget"><a href="#">Forgot your password?</a></span>
+                <input type="checkbox" id="remember">
+                <label for="remember">Remember me</label>
+            </div>
+            <button class="login-button">Login</button><br>
+            <span class="line"></span><p>Or</p><span class="line"></span>
+
+            <div class="google">
+                <img src="/Pictures/PNGs/email-logo-png-1114.png" alt="" class="login-img">
+                <p>Continue with Google</p>
+            </div>
+            <div class="facebook-login">
+                <img src="/Pictures/PNGs/facebookpng-32214.png" alt="" class="login-img">
+                <p>Continue with Facebook</p>
+            </div>
+            <p>By continuing, you agree to Terms of Service and acknowledge you have read our Privacy Policy.</p>
+            <p>Don't have an account? <a href="/Signup/signup.html" class="signup">Sign up</a></p>
+        </form>
+
+    </div>
 </body>
 </html>
 

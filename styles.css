@@ -559,7 +559,7 @@ letter-spacing: 5px;
     font-size: 2rem;
 }
 
-input {
+input[type=text] {
     background-color:rgb(16, 112, 112);
     /* background: linear-gradient(to right, rgb(0, 43, 40), rgb(3, 124, 124), rgb(0, 43, 40)); */
     border: none;
@@ -572,21 +572,21 @@ input {
     font-size: 2rem;
 }
 
-input:focus {
+/* input:focus {
     color: var(--pink);
     font-family: var(--primary-font);
     font-size: 2rem;
     outline: none;
-}
+} */
 
-::placeholder {
+/* ::placeholder {
     color: var(--pink);
     font-family: var(--primary-font);
     font-size: 2rem;
     letter-spacing: 4px;
-}
+} */
 
-.button {
+.news-button {
     padding: 2%;
     margin: 0 auto;
     background-color: rgb(209, 79, 155);
@@ -602,7 +602,7 @@ input:focus {
     letter-spacing: 4px;
 }
 
-button:hover {
+.news-button:hover {
     cursor: pointer;
     transform: scale(1.1);
     background-color: rgb(230, 61, 159);
@@ -793,6 +793,104 @@ footer {
     transform: translate(-50%);
 }
 
+/* =========================== Modal login section ====================== */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    max-width: 600px;
+    border: 1px solid rgb(34, 34, 34);
+    padding: 20px;
+}
+
+.modal-content h1 {
+    margin: 30px 0;
+}
+.modal-content h1, .modal-content p {
+    padding: 10px 0;
+    text-align: center;
+}
+
+input[type=email], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.remember {
+    padding: 14px 0;
+}
+.forget {
+    float: right;
+}
+.forget a {
+    color: #04e090;
+}
+
+.login-button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+}
+.login-button:hover {
+    opacity: 0.8;
+}
+
+.google, .facebook-login {
+    display: flex;
+    width: 100%;
+    padding: 5px 20px;
+    border: 1px solid gray;
+    margin: 8px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.google:hover, .facebook-login:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+.google p, .facebook-login p {
+    flex: 1;
+}
+
+.login-img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.signup {
+    color: #dd69b3;
+    font-weight: bold;
+}
+
+.animate {
+    animation: animatezoom 0.6s;
+}
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
 /* =========================== Keyframes====================== */
-
-
