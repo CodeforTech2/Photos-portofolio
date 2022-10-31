@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --white: rgb(226, 226, 226);
+    --pink: #dd69b3;
+    /* --primary-font: 'Montserrat', sans-serif; */
+    --primary-font: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-family: var(--primary-font);
+}
+
+/* =========================== Navbar and welcome page ====================== */
+
+nav {
+    /* background-color: gray; */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    /* max-width: 90%; */
+    margin: auto;
+    background-color: rgb(190, 188, 188);
+}
+
+#logo {
+    font-family: var(--primary-font);
+}
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.nav-list li {
+    list-style-type: none;
+}
+
+.nav-list li, #login, #signup  {
+    padding: 5px 15px;
+    letter-spacing: 4px;
+}
+
+.nav-list li:hover {
+    color: var(--pink)
+}
+
+#login, #signup {
+    cursor: pointer;
+    font-weight: 900;
+    border: none;
+    margin-right: 17px;
+}
+
+#login {
+    background-color: black;
+    color: rgb(226, 226, 226);
+}
+
+#login:hover {
+    background-color: rgb(43, 40, 40);
+}
