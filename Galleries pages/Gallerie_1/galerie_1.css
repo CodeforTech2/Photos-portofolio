@@ -29,6 +29,7 @@ body {
 header {
     height: 70vh;
     width: 100%;
+    background-image: url(/Pictures/Landing.jpg);
 }
 nav {
     /* background-color: gray; */
@@ -37,7 +38,6 @@ nav {
     align-items: center;
     /* max-width: 90%; */
     margin: auto;
-    background-color: rgb(233, 233, 233);
 }
 
 #logo {

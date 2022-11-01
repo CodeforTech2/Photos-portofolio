@@ -30,7 +30,9 @@ body {
 header {
     height: 70vh;
     width: 100%;
+    background-image: url(/Pictures/Landing.jpg);
 }
+
 nav {
     /* background-color: gray; */
     padding: 10px;
@@ -38,7 +40,7 @@ nav {
     align-items: center;
     /* max-width: 90%; */
     margin: auto;
-    background-color: rgb(190, 188, 188);
+    /* background-color: rgb(190, 188, 188); */
 }
 
 #logo {
@@ -84,8 +86,6 @@ nav {
     height: 60vh;
     padding: 50px 0;
     margin: 0 auto;
-    /* background: linear-gradient(150deg, rgb(247, 247, 247), gray, rgb(230, 230, 230)); */
-    /* border-bottom: 5px solid rgb(44, 44, 44); */
 }
 
 .first-img {
@@ -115,7 +115,7 @@ nav {
 }
 
 .container img:hover {
-    /* transform: scale(1.1); */
+    transform: scale(1.1);
 }
 
 
