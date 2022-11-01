@@ -101,13 +101,13 @@ nav {
 .column {
     flex: 33.3%;
     max-width: 33.3%;
-    padding: 0 4px;
+    padding: 0 14px;
 }
 
 .column img {
     width: 100%;
     vertical-align: middle;
-    margin-top: 8px;
+    margin: 14px 0;
 }
 
 @media screen and (max-width: 800px) {

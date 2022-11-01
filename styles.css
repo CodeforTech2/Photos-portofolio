@@ -118,6 +118,7 @@ nav {
     color: rgb(255, 255, 255);
     position: relative;
     overflow: hidden;
+    filter: brightness(0.5); /*for darken the film section*/
 }
 
 .film-portofolio h1 {
