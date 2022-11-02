@@ -28,9 +28,9 @@ body {
 /* =========================== Navbar and welcome page ====================== */
 
 header {
-    height: 70vh;
+    height: 100vh;
     width: 100%;
-    background-image: url(/Pictures/Landing.jpg);
+    background-image: url(/Pictures/resized_pom_crop.jpeg);
 }
 
 nav {
@@ -45,6 +45,7 @@ nav {
 
 #logo {
     font-family: var(--primary-font);
+    color: var(--pink);
 }
 .nav-list {
     display: flex;
@@ -54,6 +55,7 @@ nav {
 
 .nav-list li {
     list-style-type: none;
+    color: var(--pink);
 }
 
 .nav-list li, #login, #signup  {
