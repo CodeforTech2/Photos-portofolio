@@ -8,4 +8,4 @@ window.addEventListener('scroll', (e)=>{
     if (lastKnownScrollPosition > 300) {
         container.style.marginTop = '200px';
     }
-})
+});
