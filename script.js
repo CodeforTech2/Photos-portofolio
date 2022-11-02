@@ -1,3 +1,4 @@
+
 //=============================== Login Modal form ===============================
 const modalForm = document.getElementById('form');
 const loginButton = document.getElementById('login');
@@ -17,6 +18,7 @@ loginCloseButton.addEventListener('click', ()=>{
     modalForm.style.display = 'none';
 })
 
+
 //=============================== Fadeout landing page when scroll down ===============================
 const header = document.getElementById('header');
 
@@ -24,6 +26,7 @@ window.addEventListener('scroll', function() {
     header.style.backgroundSize = 103 + +window.scrollY/10+ '%';
     // header.style.opacity = 1 - +window.scrollY/800+'';
 })
+
 
 //===============================  Slide Film Portofolio with arrows ===============================
 //implement right left keys
