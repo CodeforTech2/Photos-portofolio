@@ -697,16 +697,27 @@ input[type=text] {
   .gradient:hover::before {
     opacity: 0.5;
   }
-  /* ===========================   ====================== */
+  /* =========================== Quote section  ====================== */
 
-  .test {
+  .quote {
     height: 50vh;
     background-color: bisque;
     background-image: url(/Pictures/Landing.jpg);
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
+  .quote h1 {
+    width: 50%;
+    font-size: 4rem;
+    font-family: 'Old Standard TT', serif;
+    font-weight: 100;
+    letter-spacing: 3px;
+    text-shadow: 2px 4px 2px var(--white);
+  }
 
    /* =========================== Footer ====================== */
 
