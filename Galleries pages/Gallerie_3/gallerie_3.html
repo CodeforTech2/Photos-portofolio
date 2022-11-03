@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallerie 3</title>
     <link rel="stylesheet" href="/Galleries pages/Gallerie_3/gallerie_3.css">
+    <script src="/Galleries pages/Gallerie_3/gallerie_3.js" defer></script>
 </head>
 <body>
     <header>
@@ -65,5 +66,37 @@
             <img src="/Pictures/Featured-Film/Screenshot_20191114_165835.jpg" alt="">
         </div>
     </section>
+
+     <!-- Login Modal Section -->
+     <div id="form" class="modal">
+
+        <form class="modal-content animate" action="" method="post">
+            <span id="close-login">&times;</span>
+            <h1>Login to your account!</h1>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" placeholder="Enter Email"><br>
+            <label for="psw">Password</label><br>
+            <input type="password" id="psw" placeholder="Enter Password"><br>
+            <div class="remember">
+                <span class="forget"><a href="#">Forgot your password?</a></span>
+                <input type="checkbox" id="remember">
+                <label for="remember">Remember me</label>
+            </div>
+            <button class="login-button">Login</button><br>
+            <span class="line"></span><p>Or</p><span class="line"></span>
+
+            <div class="google">
+                <img src="/Pictures/PNGs/email-logo-png-1114.png" alt="" class="login-img">
+                <p>Continue with Google</p>
+            </div>
+            <div class="facebook-login">
+                <img src="/Pictures/PNGs/facebookpng-32214.png" alt="" class="login-img">
+                <p>Continue with Facebook</p>
+            </div>
+            <p>By continuing, you agree to Terms of Service and acknowledge you have read our Privacy Policy.</p>
+            <p>Don't have an account? <a href="/Signup/signup.html" target="_blank" class="signup">Sign up</a></p>
+        </form>
+
+    </div>
 </body>
 </html>

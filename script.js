@@ -12,11 +12,11 @@ window.onclick = function(e) {
 
 loginButton.addEventListener('click', ()=>{
     modalForm.style.display = 'block';
-})
+});
 
 loginCloseButton.addEventListener('click', ()=>{
     modalForm.style.display = 'none';
-})
+});
 
 
 //=============================== Fadeout landing page when scroll down ===============================
