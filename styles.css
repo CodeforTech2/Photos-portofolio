@@ -700,23 +700,26 @@ input[type=text] {
   /* =========================== Quote section  ====================== */
 
   .quote {
-    height: 50vh;
+    height: 100vh;
     background-color: bisque;
-    background-image: url(/Pictures/Landing.jpg);
+    background-image: url(/Pictures/Ciucaru.jpg);
     background-size: cover;
     background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
   }
 
   .quote h1 {
     width: 50%;
-    font-size: 4rem;
+    font-size: 6vh;
     font-family: 'Old Standard TT', serif;
     font-weight: 100;
     letter-spacing: 3px;
     text-shadow: 2px 4px 2px var(--white);
+    text-align: center;
+    position: fixed;
   }
 
    /* =========================== Footer ====================== */
