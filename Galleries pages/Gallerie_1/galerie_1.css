@@ -6,9 +6,11 @@
     margin: 0;
     padding: 0;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 :root {
     --white: rgb(226, 226, 226);
     --pink: #dd69b3;
@@ -105,7 +107,6 @@ nav {
 .grid-container {
     display: flex;
     flex-wrap: wrap;
-    /* background: linear-gradient(180deg, rgb(245, 221, 180), rgb(248, 154, 193)); */
 }
 
 .column {
@@ -127,7 +128,7 @@ nav {
       max-width: 70%;
       margin: 0 auto;
     }
-  };
+  }
 
   /* =========================== Modal login section ====================== */
 
@@ -239,6 +240,7 @@ input[type=email], input[type=password] {
 .animate {
     animation: animatezoom 0.6s;
 }
+
 @keyframes animatezoom {
     from {transform: scale(0)} 
     to {transform: scale(1)}

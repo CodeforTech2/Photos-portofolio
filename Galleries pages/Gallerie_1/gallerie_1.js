@@ -18,3 +18,7 @@ loginButton.addEventListener('click', ()=>{
 loginCloseButton.addEventListener('click', ()=>{
     modalForm.style.display = 'none';
 });
+
+loginButton.addEventListener('click', ()=>{
+    console.log('test');
+});
