@@ -135,10 +135,10 @@ nav {
 
 .film-roll {
     position: absolute;
-    width: 600px;
+    width: 35vw;
     transform: rotate(15deg);
     right: 10%;
-    top: -10%;
+    top: -15%;
     z-index: -1;
 }
 
