@@ -135,10 +135,10 @@ nav {
 
 .film-roll {
     position: absolute;
-    width: 35vw;
+    width: 30vw;
     transform: rotate(15deg);
     right: 10%;
-    top: -15%;
+    top: -10%;
     z-index: -1;
 }
 
@@ -554,7 +554,7 @@ nav {
     letter-spacing: 3px;
     text-shadow: 5px 5px 2px black;
     text-align: center;
-    color: var(--white);
+    color: white;
   }
 
 
