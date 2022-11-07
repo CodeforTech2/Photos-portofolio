@@ -97,6 +97,7 @@ nav {
     border: 15px solid rgb(0, 0, 0);
     margin: 0 auto;
     transition: all 1s;
+    cursor: pointer;
 }
 
 .first-img:hover {
@@ -123,6 +124,7 @@ nav {
     vertical-align: middle;
     margin: 14px 0;
     border: 10px solid black;
+    cursor: pointer;
 }
 
 .column-middle {
@@ -135,6 +137,7 @@ nav {
     vertical-align: middle;
     margin: 14px 0;
     border: 10px solid black;
+    cursor: pointer;
 }
 
 

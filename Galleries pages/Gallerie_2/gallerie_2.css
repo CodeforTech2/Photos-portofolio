@@ -117,6 +117,7 @@ nav {
     vertical-align: middle;
     margin: 24px 0;
     border: 15px solid rgb(41, 41, 41);
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1300px) {

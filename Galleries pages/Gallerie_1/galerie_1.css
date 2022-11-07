@@ -97,6 +97,7 @@ nav {
     border: 10px solid rgb(41, 41, 41);
     margin: 0 auto;
     transition: all 1s;
+    cursor: pointer;
 }
 
 .first-img:hover {
@@ -120,6 +121,7 @@ nav {
     vertical-align: middle;
     margin: 14px 0;
     border: 10px solid rgb(41, 41, 41);
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1000px) {

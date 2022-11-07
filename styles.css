@@ -118,15 +118,9 @@ nav {
     color: rgb(255, 255, 255);
     position: relative;
     overflow: hidden;
+    filter: brightness(0.5);
 }
 
-.background {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: rgb(0, 0, 0);
-    filter: opacity(0.4);
-}
 
 .film-portofolio h1 {
     width: 500px;
@@ -160,6 +154,7 @@ nav {
     overflow: hidden;
     flex: 1;
     width: 22vw;
+    cursor: pointer;
 }
 
 .film-img {
@@ -182,18 +177,22 @@ nav {
 }
 
 #prev, #next {
-    color: #73573d;
+    color: #d48e4c;
     font-size: 3vw;
     margin: 30px;
     transition: 0.3s;
     background-color: #1c1c1b;
     border: none;
+    width: 6vw;
+    /* background-color: rgb(32, 32, 32);
+    filter: opacity(0.4); */
 }
 
 #prev:hover, #next:hover {
     cursor: pointer;
-    color: #b9936c;
+    color: #d48e4c;
     transform: scale(1.2);
+
 }
 
 /* =========================== Black and White section ====================== */
@@ -219,6 +218,7 @@ nav {
     transform: rotate3d(-1, -1, -0.1, 25deg);
     transition: 0.7s;
     z-index: 10;
+    cursor: pointer;
 }
 .black-white-left:hover {
     transform: rotate3d(1, -1, -0.1, 25deg);
@@ -241,6 +241,7 @@ nav {
     transform: rotate3d(0.5, 1, 1, 15deg);
     transition: 0.7s;
     z-index: 10;
+    cursor: pointer;
 }
 .black-white-right:hover {
     transform: rotate3d(1, -1, 0.2, 30deg);
@@ -278,8 +279,6 @@ nav {
     flex-wrap: wrap;
     gap: 3%;
     position: relative;
-    /* background-image: url(/Pictures/PNGs/lines1.png); */
-    /* background-position: center; */
 }
 
 .random-img {
@@ -288,7 +287,6 @@ nav {
 }
 
 .random-img:hover {
-    /* transform: scale(1.1); */
     cursor: pointer;
 
 }
@@ -297,10 +295,6 @@ nav {
     overflow: hidden;
     transition: all 0.5s;
 }
-
-/* .wrapper:hover {
-    transform: rotate(0);
-} */
 
 .wrapper1 {
     position: relative;
@@ -368,7 +362,6 @@ nav {
     flex-wrap: wrap;
     gap: 3%;
     position: relative;
-    /* background-image: url(/Pictures/PNGs/lines1.png); */
 }
 .wrapper6 {
     position: absolute;
@@ -444,7 +437,6 @@ nav {
     height: 100vh;
     display: flex;
     position: relative;
-    /* background-color: rgb(255, 242, 233); */
     background: linear-gradient(65deg, rgb(77, 46, 11), rgb(224, 224, 224), rgb(209, 201, 191), rgb(73, 39, 0));
     justify-content: center;
     align-items: center;
@@ -535,7 +527,7 @@ nav {
     text-align: center;
     padding: 20px;
     font-size: 3vh;
-    font-family:Georgia, 'Times New Roman', Times, serif
+    font-family: Georgia, 'Times New Roman', Times, serif
     /* font-family: 'Old Standard TT', serif; */
 }
 

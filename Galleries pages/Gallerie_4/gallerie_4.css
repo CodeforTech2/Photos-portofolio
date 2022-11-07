@@ -115,6 +115,7 @@ nav {
     height: 100%;
     object-fit: cover;
     transition: all 6s;
+    cursor: pointer;
 }
 
 .container img:hover {
