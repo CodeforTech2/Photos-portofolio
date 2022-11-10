@@ -124,7 +124,7 @@ nav {
 .film-portofolio h1 {
     width: 600px;
     /* top: 100px; */
-    top: 13vh;
+    top: 15vh;
     position: absolute;
     font-family: 'Old Standard TT', serif;
     text-align: center;
@@ -277,7 +277,7 @@ nav {
 /* =========================== Random thrown section ====================== */
 
 .random-thrown-section {
-    background-color: rgb(255, 248, 239);
+    background-color: rgb(255, 251, 246);
     height: 200vh;
 }
 
