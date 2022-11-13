@@ -448,7 +448,8 @@ nav {
     height: 100vh;
     display: flex;
     position: relative;
-    background: linear-gradient(65deg, rgb(77, 46, 11), rgb(224, 224, 224), rgb(209, 201, 191), rgb(73, 39, 0));
+    /* background: linear-gradient(65deg, rgb(77, 46, 11), rgb(224, 224, 224), rgb(209, 201, 191), rgb(73, 39, 0)); */
+    background: linear-gradient(65deg, rgb(54, 60, 61), rgb(224, 224, 224), rgb(209, 201, 191), rgb(95, 67, 34));
     justify-content: center;
     align-items: center;
 }
@@ -509,7 +510,8 @@ nav {
 
 .gallerie-img {
     width: 100%;
-    height: auto;
+    height: 40vh;
+    object-fit: cover;
     transition: 0.3s ease;
 }
 
