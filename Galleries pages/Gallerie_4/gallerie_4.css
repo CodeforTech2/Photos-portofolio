@@ -30,7 +30,7 @@ body {
 header {
     height: 100vh;
     width: 100%;
-    background-image: url(/Pictures/resized_pom_crop.jpeg);
+    background-image: url();
     background-position: center;
     background-size: cover;
     /* background-attachment: fixed; */
