@@ -243,7 +243,7 @@ nav {
 }
 
 .black-white-right {
-    max-width: 30vw;
+    max-width: 28vw;
     height: auto;
     position: absolute;
     bottom: 10%;
@@ -279,7 +279,7 @@ nav {
 /* =========================== Random thrown section ====================== */
 
 .random-thrown-section {
-    background-color: rgb(255, 251, 246);
+    background-color: rgb(248, 246, 246);
     height: 200vh;
 }
 
@@ -295,6 +295,7 @@ nav {
 .random-img {
     object-fit: cover;
     transition: all 0.5s;
+    border: 5px solid rgb(165, 136, 153);
 }
 
 .random-img:hover {
