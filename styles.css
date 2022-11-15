@@ -295,7 +295,7 @@ nav {
 .random-img {
     object-fit: cover;
     transition: all 0.5s;
-    border: 5px solid rgb(165, 136, 153);
+    /* border: 5px solid rgb(165, 136, 153); */
 }
 
 .random-img:hover {
