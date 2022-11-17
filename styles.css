@@ -279,7 +279,8 @@ nav {
 /* =========================== Random thrown section ====================== */
 
 .random-thrown-section {
-    background-color: rgb(248, 246, 246);
+    /* background-color: rgb(248, 246, 246); */
+    /* background: linear-gradient(rgb(255, 255, 255), rgb(240, 192, 224)); */
     height: 200vh;
 }
 
@@ -295,7 +296,7 @@ nav {
 .random-img {
     object-fit: cover;
     transition: all 0.5s;
-    /* border: 5px solid rgb(165, 136, 153); */
+    border: 5px solid rgb(255, 141, 217);
 }
 
 .random-img:hover {
@@ -321,7 +322,7 @@ nav {
     top: 15%;
     left: 5%;
     width: 20vw;
-    height: 36vh;
+    height: 50vh;
 }
 .wrapper3 {
     position: absolute;
@@ -336,7 +337,7 @@ nav {
     top: 3%;
     right: 3%;
     width: 20vw;
-    height: 26vh;
+    height: 36vh;
 }
 .wrapper5 {
     position: absolute;
@@ -352,7 +353,7 @@ nav {
 }
 .img2 {
     width: 20vw;
-    height: 36vh;
+    height: 50vh;
 }
 .img3 {
     width: 30vw;
@@ -360,11 +361,12 @@ nav {
 }
 .img4 {
     width: 20vw;
-    height: 26vh;
+    height: 36vh;
 }
 .img5 {
     width: 25vw;
     height: 26vh;
+    
 }
 
 .random-thrown-section2 {
@@ -379,12 +381,12 @@ nav {
     position: absolute;
     right: 40%;
     top: -6%;
-    width: 15vw;
-    height: 26vh;
+    width: 17vw;
+    height: 36vh;
 }
 .wrapper7 {
     position: relative;
-    top: 10%;
+    top: 5%;
     left: 10%;
     width: 30vw;
     height: 58vh;
@@ -395,52 +397,57 @@ nav {
     right: 30%;
     width: 20vw;
     height: 46vh;
+    
 }
 .wrapper9 {
     position: absolute;
     right: 15%;
     top: 10%;
     width: 20vw;
-    height: 26vh;
+    height: 36vh;
 }
 .wrapper10 {
     position: absolute;
     bottom: 0;
     right: 0;
     width: 22vw;
-    height: 21vh;
+    height: 31vh;
 }
 .wrapper11 {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 18vw;
-    height: 20vh;
+    height: 30vh;
 }
 
 .img6 {
-    width: 15vw;
-    height: 26vh;
+    width: 17vw;
+    height: 36vh;
 }
 .img7 {
     width: 30vw;
     height: 58vh;
 }
 .img8 {
-    width: 20vw;
-    height: 46vh;
+    width: auto;
+    height: 66vh;
+    object-fit: contain;
 }
 .img9 {
     width: 20vw;
-    height: 26vh;
+    height: 36vh;
 }
 .img10 {
     width: 22vw;
-    height: 21vh;
+    height: 31vh;
+    object-fit: cover;
 }
 .img11{
     width: 18vw;
-    height: 20vh;
+    height: 35vh;
+    /* object-fit: cover; */
+
 }
 
 /* =========================== Love section ====================== */
