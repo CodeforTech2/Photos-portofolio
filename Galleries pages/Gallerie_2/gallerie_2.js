@@ -11,7 +11,6 @@ window.addEventListener('scroll', (e)=>{
 });
 
 
-
 //=============================== Login Modal form ===============================
 const modalForm = document.getElementById('form');
 const loginButton = document.getElementById('login');
