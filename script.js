@@ -20,12 +20,12 @@ loginCloseButton.addEventListener('click', ()=>{
 
 
 //=============================== Fadeout landing page when scroll down ===============================
-const header = document.getElementById('header');
+// const header = document.getElementById('header');
 
-window.addEventListener('scroll', function() {
-    header.style.backgroundSize = 103 + +window.scrollY/10+ '%';
-    // header.style.opacity = 1 - +window.scrollY/800+'';
-})
+// window.addEventListener('scroll', function() {
+//     header.style.backgroundSize = 103 + +window.scrollY/10+ '%';
+//     // header.style.opacity = 1 - +window.scrollY/800+'';
+// })
 
 
 //===============================  Slide Film Portofolio with arrows ===============================
